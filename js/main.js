@@ -1,7 +1,8 @@
 var inputlength = document.querySelectorAll(".position_data").length;
 // console.log(inputlength);
 for (var i = 0; i < inputlength; i++) {
-  document.querySelectorAll(".position_data")[i].addEventListener('change', function(event) {
+  document.querySelectorAll(".position_data")[i].addEventListener('input', function(event) {
+    // alert("Fdsa");
     inp1 = document.querySelector("#inp1").value;
     inp2 = document.querySelector("#inp2").value;
     inp3 = document.querySelector("#inp3").value;
@@ -62,52 +63,25 @@ for (var i = 0; i < inputlength; i++) {
   });
 }
 
-// selectElement.addEventListener('change', (event) => {
-//   const result = document.querySelector('.result');
-//   result.textContent = `You like ${event.target.value}`;
-// });
-
-// var val
-// var va12
-// var va13
-// var va14
-// var va15
-// var va16
-// var va17
-// var va18
-// // const data=[];
-// function getVal() {
-// val = document.getElementById('inp1').value;
-// //    data.push(val);
-// console.log(val);
-// }
-// function getVal2() {
-// val2 = document.getElementById('inp2').value;
-// console.log(val2);
-// }
-// function getVal3() {
-// val3 = document.getElementById('inp3').value;
-// console.log(val3);
-// }
-// function getVal4() {
-// val4 = document.getElementById('inp4').value;
-// }
-// function getVal5() {
-// val5 = document.getElementById('inp5').value;
-// console.log(val5);
-// }
-// function getVal6() {
-// val6 = document.getElementById('inp6').value;
-// console.log(val6);
-// }
-// function getVal7() {
-// val7 = document.getElementById('inp7').value;
-// console.log(val7);
-// }
-// function getVal8() {
-// val8 = document.getElementById('inp8').value;
-// console.log(val8);
-// }
-//
-// // const sum =getVal() + getVal2();
-// //   console.log(sum);
+function reset(){
+  document.querySelector("#inp1").value = "NaN";
+  document.querySelector("#inp2").value = "NaN";
+  document.querySelector("#inp3").value = "NaN";
+  document.querySelector("#inp4").value = "NaN";
+  document.querySelector("#inp5").value = "NaN";
+  document.querySelector("#inp6").value = "NaN";
+  document.querySelector("#inp7").value = "NaN";
+  document.querySelector("#inp8").value = "NaN";
+  document.querySelector("#groupA span").style.color = "black";
+  document.querySelector("#groupB span").style.color = "black";
+  document.querySelector("#groupC span").style.color = "black";
+  document.querySelector("#groupD span").style.color = "black";
+  document.querySelector("#groupE span").style.color = "black";
+  document.querySelector("#groupF span").style.color = "black";
+  document.querySelector("#groupA span").innerHTML = "NaN";
+  document.querySelector("#groupB span").innerHTML = "NaN";
+  document.querySelector("#groupC span").innerHTML = "NaN";
+  document.querySelector("#groupD span").innerHTML = "NaN";
+  document.querySelector("#groupE span").innerHTML = "NaN";
+  document.querySelector("#groupF span").innerHTML = "NaN";
+}
