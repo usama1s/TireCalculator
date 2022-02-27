@@ -12,76 +12,105 @@ for (var i = 0; i < inputlength; i++) {
     inp7 = document.querySelector("#inp7").value;
     inp8 = document.querySelector("#inp8").value;
 
-    groupA = ((eval(inp7) + eval(inp1) + eval(inp8))/3).toFixed(3);
-    groupB = ((eval(inp8) + eval(inp1) + eval(inp2))/3).toFixed(3);
-    groupC = ((eval(inp1) + eval(inp2) + eval(inp3))/3).toFixed(3);
-    groupD = ((eval(inp3) + eval(inp4) + eval(inp5))/3).toFixed(3);
-    groupE = ((eval(inp4) + eval(inp5) + eval(inp6))/3).toFixed(3);
-    groupF = ((eval(inp5) + eval(inp6) + eval(inp7))/3).toFixed(3);
+    groupA = ((eval(inp7) + eval(inp1) + eval(inp8)) / 3).toFixed(3);
+    groupB = ((eval(inp8) + eval(inp1) + eval(inp2)) / 3).toFixed(3);
+    groupC = ((eval(inp1) + eval(inp2) + eval(inp3)) / 3).toFixed(3);
+    groupD = ((eval(inp3) + eval(inp4) + eval(inp5)) / 3).toFixed(3);
+    groupE = ((eval(inp4) + eval(inp5) + eval(inp6)) / 3).toFixed(3);
+    groupF = ((eval(inp5) + eval(inp6) + eval(inp7)) / 3).toFixed(3);
 
-    if (groupA>=0.140) {
+    if (groupA >= 0.140) {
       document.querySelector("#groupA span").style.color = "green";
-    }else{
+    } else {
       document.querySelector("#groupA span").style.color = "red";
     }
-    document.querySelector("#groupA span").innerHTML = groupA;
+    if (groupA != "NaN") {
+      document.querySelector("#groupA span").innerHTML = groupA;
+    }
 
-    if (groupB>=0.140) {
+
+    if (groupB >= 0.140) {
       document.querySelector("#groupB span").style.color = "green";
-    }else{
+    } else {
       document.querySelector("#groupB span").style.color = "red";
     }
-    document.querySelector("#groupB span").innerHTML = groupB;
+    if (groupB != "NaN") {
+      document.querySelector("#groupB span").innerHTML = groupB;
+    }
 
-    if (groupC>=0.140) {
+    if (groupC >= 0.140) {
       document.querySelector("#groupC span").style.color = "green";
-    }else{
+    } else {
       document.querySelector("#groupC span").style.color = "red";
     }
-    document.querySelector("#groupC span").innerHTML = groupC;
+    if (groupC != "NaN") {
+      document.querySelector("#groupC span").innerHTML = groupC;
+    }
 
-    if (groupD>=0.140) {
+    if (groupD >= 0.140) {
       document.querySelector("#groupD span").style.color = "green";
-    }else{
+    } else {
       document.querySelector("#groupD span").style.color = "red";
     }
-    document.querySelector("#groupD span").innerHTML = groupD;
+    if (groupD != "NaN") {
+      document.querySelector("#groupD span").innerHTML = groupD;
+    }
 
-    if (groupE>=0.140) {
+    if (groupE >= 0.140) {
       document.querySelector("#groupE span").style.color = "green";
-    }else{
+    } else {
       document.querySelector("#groupE span").style.color = "red";
     }
-    document.querySelector("#groupE span").innerHTML = groupE;
+    if (groupE != "NaN") {
+      document.querySelector("#groupE span").innerHTML = groupE;
+    }
 
-    if (groupF>=0.140) {
+    if (groupF >= 0.140) {
       document.querySelector("#groupF span").style.color = "green";
-    }else{
+    } else {
       document.querySelector("#groupF span").style.color = "red";
     }
-    document.querySelector("#groupF span").innerHTML = groupF;
+    if (groupF != "NaN") {
+      document.querySelector("#groupF span").innerHTML = groupF;
+    }
   });
 }
 
-function reset(){
-  document.querySelector("#inp1").value = "NaN";
-  document.querySelector("#inp2").value = "NaN";
-  document.querySelector("#inp3").value = "NaN";
-  document.querySelector("#inp4").value = "NaN";
-  document.querySelector("#inp5").value = "NaN";
-  document.querySelector("#inp6").value = "NaN";
-  document.querySelector("#inp7").value = "NaN";
-  document.querySelector("#inp8").value = "NaN";
+function reset() {
+  document.querySelector("#inp1").value = "";
+  document.querySelector("#inp2").value = "";
+  document.querySelector("#inp3").value = "";
+  document.querySelector("#inp4").value = "";
+  document.querySelector("#inp5").value = "";
+  document.querySelector("#inp6").value = "";
+  document.querySelector("#inp7").value = "";
+  document.querySelector("#inp8").value = "";
   document.querySelector("#groupA span").style.color = "black";
   document.querySelector("#groupB span").style.color = "black";
   document.querySelector("#groupC span").style.color = "black";
   document.querySelector("#groupD span").style.color = "black";
   document.querySelector("#groupE span").style.color = "black";
   document.querySelector("#groupF span").style.color = "black";
-  document.querySelector("#groupA span").innerHTML = "NaN";
-  document.querySelector("#groupB span").innerHTML = "NaN";
-  document.querySelector("#groupC span").innerHTML = "NaN";
-  document.querySelector("#groupD span").innerHTML = "NaN";
-  document.querySelector("#groupE span").innerHTML = "NaN";
-  document.querySelector("#groupF span").innerHTML = "NaN";
+  document.querySelector("#groupA span").innerHTML = "";
+  document.querySelector("#groupB span").innerHTML = "";
+  document.querySelector("#groupC span").innerHTML = "";
+  document.querySelector("#groupD span").innerHTML = "";
+  document.querySelector("#groupE span").innerHTML = "";
+  document.querySelector("#groupF span").innerHTML = "";
+}
+window.addEventListener('resize', function(event) {
+  updateEngineSize()
+});
+updateEngineSize();
+
+function updateEngineSize() {
+  console.log(window.innerWidth >= window.innerHeight);
+  // console.log(window.innerHeight);
+  if (window.innerWidth >= window.innerHeight) {
+    document.querySelector("body").classList.add("landscapeScreen");
+    document.querySelector("body").classList.remove("portraitScreen");
+  } else {
+    document.querySelector("body").classList.add("portraitScreen");
+    document.querySelector("body").classList.remove("landscapeScreen");
+  }
 }
