@@ -240,7 +240,7 @@ section {
   padding: 20px;
   position: absolute;
   right: 0%;
-  bottom: 5%;
+  bottom: 10%;
   transform: translateX(70%);
 }
 
@@ -251,8 +251,9 @@ section {
 .groups {
   display: block;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 30px;
   text-align: left;
+  margin: 0;
 }
 
 .info-btn {
