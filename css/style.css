@@ -83,9 +83,10 @@ section {
   background: transparent;
   position: absolute;
   right: -37px;
-  top: 86px;
-  width: 44px;
-  height: 34px;
+  top: 85px;
+  width: 33px;
+  height: 33px;
+  padding: 0;
 }
 
 .reset img {
