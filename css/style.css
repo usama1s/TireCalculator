@@ -41,6 +41,7 @@ section {
   position: relative;
   width: fit-content;
   padding: 140px;
+  margin-top: -20px;
 }
 
 .landscapeScreen #engine-img {
