@@ -72,7 +72,7 @@ section {
 .inputs input {
   font-size: 18px;
   text-align: center;
-  width: 100%;
+  width: 115px;
   border: none;
   border-bottom: 1px solid black;
   border-radius: 0;
@@ -82,9 +82,10 @@ section {
   border: 0;
   background: transparent;
   position: absolute;
-  left: 25px;
-  top: 92px;
-  width: 30px;
+  right: -37px;
+  top: 86px;
+  width: 44px;
+  height: 34px;
 }
 
 .reset img {
@@ -255,9 +256,9 @@ section {
 
 .info-btn {
   position: absolute;
-  left: 0;
+  /* left: 0; */
   top: 0;
-  left: 75px;
+  right: 20px;
   top: 85px;
   display: block;
   width: 30px;
