@@ -12,6 +12,47 @@ for (var i = 0; i < inputlength; i++) {
     inp7 = document.querySelector("#inp7").value;
     inp8 = document.querySelector("#inp8").value;
 
+    if (inp1>=1) {
+      document.querySelector("#inp1").style.color = "red";
+    }else{
+      document.querySelector("#inp1").style.color = "black";
+    }
+    if (inp2>=1) {
+      document.querySelector("#inp2").style.color = "red";
+    }else{
+      document.querySelector("#inp2").style.color = "black";
+    }
+    if (inp3>=1) {
+      document.querySelector("#inp3").style.color = "red";
+    }else{
+      document.querySelector("#inp3").style.color = "black";
+    }
+    if (inp4>=1) {
+      document.querySelector("#inp4").style.color = "red";
+    }else{
+      document.querySelector("#inp4").style.color = "black";
+    }
+    if (inp5>=1) {
+      document.querySelector("#inp5").style.color = "red";
+    }else{
+      document.querySelector("#inp5").style.color = "black";
+    }
+    if (inp6>=1) {
+      document.querySelector("#inp6").style.color = "red";
+    }else{
+      document.querySelector("#inp6").style.color = "black";
+    }
+    if (inp7>=1) {
+      document.querySelector("#inp7").style.color = "red";
+    }else{
+      document.querySelector("#inp7").style.color = "black";
+    }
+    if (inp8>=1) {
+      document.querySelector("#inp8").style.color = "red";
+    }else{
+      document.querySelector("#inp8").style.color = "black";
+    }
+
     groupA = ((eval(inp7) + eval(inp1) + eval(inp8)) / 3).toFixed(3);
     groupB = ((eval(inp8) + eval(inp1) + eval(inp2)) / 3).toFixed(3);
     groupC = ((eval(inp1) + eval(inp2) + eval(inp3)) / 3).toFixed(3);
