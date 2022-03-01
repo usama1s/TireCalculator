@@ -11,18 +11,19 @@ bor {
 body {
   position: relative;
   font-family: sans-serif;
-  background: linear-gradient(to top left, rgba(77,20,140,1), rgba(255,102,0,1));
-  background-position: center;
-  background-size: 99%;
+  background: linear-gradient(-45deg, rgba(77,20,140,1), rgba(255,102,0,1));
+  /* background-position: center; */
+  /* background-size: cover; */
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow: hidden !important;
+  margin: 0 !important;
 }
 
 h2 {
   position: absolute;
   right: 0%;
-  top: 18%;
+  top: 24%;
   transform: translateX(70%);
   text-align: left;
   font-size: 20px;
@@ -32,8 +33,10 @@ h2 {
 }
 
 section {
-  overflow: hidden;
+  overflow: hidden !important;
   padding-right: 80px;
+  width: 100vw;
+  height: 100vh;
 }
 
 .tire {
@@ -42,7 +45,7 @@ section {
   position: relative;
   width: fit-content;
   padding: 140px;
-  margin-top: -20px;
+  margin-top: -10px;
 }
 
 .landscapeScreen #engine-img {
@@ -98,7 +101,7 @@ Chrome, Safari, Edge, Opera */
   background: transparent;
   position: absolute;
   right: -37px;
-  top: 85px;
+  top: 150px;
   width: 33px;
   height: 33px;
   padding: 0;
@@ -277,7 +280,7 @@ Chrome, Safari, Edge, Opera */
   /* left: 0; */
   top: 0;
   right: 20px;
-  top: 85px;
+  top: 150px;
   display: block;
   width: 29px;
   height: 29px;
