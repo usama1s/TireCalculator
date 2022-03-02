@@ -50,7 +50,7 @@ section { width: fit-content; height: fit-content; padding: 50px 300px 50px 135p
 }
 @media (max-height: 720px) {
   h2 { top: 50px; right: -20%; }
-  .output { bottom: 0px; right: -20%; }
+  .output {bottom: -20px;right: -20%;}
   .info-btn{
     top: 15px;
   }
