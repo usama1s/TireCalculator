@@ -12,31 +12,42 @@ body {
   position: relative;
   font-family: sans-serif;
   background: linear-gradient(-45deg, rgba(77,20,140,1), rgba(255,102,0,1));
+  background: linear-gradient(-45deg, rgba(77,20,140,1) 15%, rgba(255,102,0,1) 100%);
   /* background-position: center; */
   /* background-size: cover; */
   width: 100vw;
   height: 100vh;
   overflow: hidden !important;
   margin: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h2 {
   position: absolute;
-  right: 0%;
-  top: 24%;
+  right: -18%;
+  top: 110px;
   transform: translateX(70%);
   text-align: left;
   font-size: 20px;
   line-height: 28px;
   padding: 10px 15px;
   background: white;
+  border-radius: 5px;
+  border: 2px solid black;
+  border-color: #f05f0c;
 }
 
 section {
-  overflow: hidden !important;
-  padding-right: 80px;
-  width: 100vw;
-  height: 100vh;
+  /* overflow: hidden !important; */
+  /* padding-right: 80px; */
+  /* width: calc(100vw - 80px); */
+  /* height: 100vh; */
+  width: fit-content;
+  height: fit-content;
+  padding: 50px 300px 50px 120px;
+  margin: auto;
 }
 
 .tire {
@@ -44,12 +55,12 @@ section {
   display: block;
   position: relative;
   width: fit-content;
-  padding: 140px;
-  margin-top: -10px;
+  /* padding: 140px; */
+  /* margin-top: -10px; */
 }
 
 .landscapeScreen #engine-img {
-  height: calc(100vh - 280px);
+  height: calc(100vh - 150px);
 }
 
 .portraitScreen #engine-img {
@@ -65,6 +76,8 @@ section {
   position: absolute;
   z-index: 1;
   transform-origin: center;
+  border-radius: 5px;
+  border: 2px solid black;
 }
 
 .inputs label {
@@ -100,8 +113,8 @@ Chrome, Safari, Edge, Opera */
   border: 0;
   background: transparent;
   position: absolute;
-  right: -37px;
-  top: 150px;
+  right: -130px;
+  top: 70px;
   width: 33px;
   height: 33px;
   padding: 0;
@@ -113,50 +126,58 @@ Chrome, Safari, Edge, Opera */
 
 #p1 {
   left: 50%;
-  top: 18.5%;
+  top: 0.5%;
   transform: translate(-50%, -50%);
+  border-color: #4d148c;
 }
 
 #p2 {
-  left: 22%;
-  top: 25.2%;
+  left: 11%;
+  top: 11%;
   transform: translate(-50%, -50%);
+  border-color: #77276b;
 }
 
 #p3 {
-  left: 14%;
+  left: -5%;
   top: 50%;
   transform: translate(-50%, -50%);
+  border-color: #6c2273;
 }
 
 #p4 {
-  left: 22.0%;
-  bottom: 25.2%;
+  left: 11%;
+  bottom: 11%;
   transform: translate(-50%, +50%);
+  border-color: #8b305b;
 }
 
 #p5 {
   left: 50%;
-  bottom: 17.5%;
+  bottom: 1.5%;
   transform: translate(-50%, 50%);
+  border-color: #b64439;
 }
 
 #p6 {
-  right: 22.0%;
-  bottom: 25.2%;
+  right: 11%;
+  bottom: 11%;
   transform: translate(+50%, +50%);
+  border-color: #d8541f;
 }
 
 #p7 {
-  right: 14%;
+  right: -5%;
   top: 50%;
   transform: translate(+50%, -50%);
+  border-color: #f66207;
 }
 
 #p8 {
-  right: 22.0%;
-  top: 25.2%;
+  right: 11%;
+  top: 11%;
   transform: translate(+50%, -50%);
+  border-color: #fd6502;
 }
 
 .lines {
@@ -184,22 +205,22 @@ Chrome, Safari, Edge, Opera */
 
 #line1 {
   left: 50%;
-  top: 22%;
+  top: 8%;
   transform: translate(-50%, -50%);
 }
 
 #line1::after {}
 
 #line2 {
-  left: 30%;
-  top: 30%;
+  left: 21%;
+  top: 21%;
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 #line2::after {}
 
 #line3 {
-  left: 21.7%;
+  left: 8%;
   top: 50%;
   transform: translate(-50%, -50%) rotate(-90deg);
 }
@@ -207,8 +228,8 @@ Chrome, Safari, Edge, Opera */
 #line3::after {}
 
 #line4 {
-  left: 29.7%;
-  bottom: 29.7%;
+  left: 20.2%;
+  bottom: 20.2%;
   transform: translate(-50%, +50%) rotate(-135deg);
 }
 
@@ -216,22 +237,22 @@ Chrome, Safari, Edge, Opera */
 
 #line5 {
   left: 50%;
-  bottom: 21%;
+  bottom: 7.5%;
   transform: translate(-50%, +50%) rotate(180deg);
 }
 
 #line5::after {}
 
 #line6 {
-  right: 29.5%;
-  bottom: 29.5%;
+  right: 19.5%;
+  bottom: 19.5%;
   transform: translate(+50%, +50%) rotate(+135deg);
 }
 
 #line6::after {}
 
 #line7 {
-  right: 21%;
+  right: 7%;
   top: 50%;
   transform: translate(+50%, -50%) rotate(90deg);
 }
@@ -239,8 +260,8 @@ Chrome, Safari, Edge, Opera */
 #line7::after {}
 
 #line8 {
-  right: 29.8%;
-  top: 29.8%;
+  right: 20.2%;
+  top: 20.2%;
   transform: translate(+50%, -50%) rotate(45deg);
 }
 
@@ -257,10 +278,13 @@ Chrome, Safari, Edge, Opera */
   /* height: 151px; */
   padding: 10px 15px;
   position: absolute;
-  right: 0%;
-  bottom: 10%;
+  right: -18%;
+  bottom: 6%;
   transform: translateX(70%);
   background: white;
+  border-radius: 5px;
+  border: 2px solid black;
+  border-color: #fb6402;
 }
 
 .output>div {
@@ -279,11 +303,11 @@ Chrome, Safari, Edge, Opera */
   position: absolute;
   /* left: 0; */
   top: 0;
-  right: 20px;
-  top: 150px;
+  right: -75px;
+  top: 70px;
   display: block;
-  width: 29px;
-  height: 29px;
+  width: 27px;
+  height: 27px;
   border-radius: 50%;
   border: 3px solid white;
   display: flex;
@@ -293,4 +317,15 @@ Chrome, Safari, Edge, Opera */
 }
 .info-btn img{
   width: 20px;
+}
+
+
+@media (max-width: 1200px) {
+  section {
+  /* padding-right: 130px; */
+  /* width: calc(100vw - 130px); */
+}
+.tire{
+  margin-top: 10px;
+}
 }
