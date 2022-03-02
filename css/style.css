@@ -2,7 +2,7 @@ bor { margin: 0px; padding: 0px; box-sizing: border-box; }
 :focus { outline: none; }
 body { position: relative; font-family: sans-serif; background: linear-gradient(-45deg, rgb(77, 20, 140) 25%, rgb(255, 102, 0) 100%); width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: center; overflow: hidden !important; margin: 0px !important; }
 h2 {position: absolute;right: -18%;top: 110px;transform: translateX(70%);text-align: left;font-size: 19px;line-height: 28px;padding: 10px 15px;background: white;border-radius: 5px;border: 3px solid rgb(240, 95, 12);}
-section { width: fit-content; height: fit-content; padding: 50px 300px 50px 135px; margin: auto; }
+section {width: fit-content;height: fit-content;padding: 50px 300px 50px 128px;margin: auto;}
 .tire { margin: auto; display: block; position: relative; width: fit-content; }
 .landscapeScreen #engine-img { height: calc(100vh - 170px); }
 .portraitScreen #engine-img { width: calc(100vw - 280px); }
@@ -11,7 +11,7 @@ section { width: fit-content; height: fit-content; padding: 50px 300px 50px 135p
 .inputs input { font-size: 18px; text-align: center; width: 115px; border-top: none; border-right: none; border-left: none; border-image: initial; border-bottom: 1px solid black; border-radius: 0px; }
 .inputs input::-webkit-outer-spin-button, .inputs input::-webkit-inner-spin-button { appearance: none; margin: 0px; }
 .inputs input[type="number"] { }
-.reset { border: 0px; background: transparent; position: absolute; right: -130px; top: 70px; width: 33px; height: 33px; padding: 0px; }
+.reset {border: 0px;background: transparent;/* position: absolute; *//* right: -130px; *//* top: 70px; */width: 33px;height: 33px;padding: 0px;}
 .reset img { width: 100%; }
 #p1 { left: 50%; top: 0.5%; transform: translate(-50%, -50%); border-color: rgb(77, 20, 140); }
 #p2 { left: 11%; top: 11%; transform: translate(-50%, -50%); border-color: rgb(119, 39, 107); }
@@ -42,19 +42,49 @@ section { width: fit-content; height: fit-content; padding: 50px 300px 50px 135p
 .output { display: block; align-items: center; justify-content: center; flex-grow: 1; width: 185px; padding: 10px 15px; position: absolute; right: -18%; bottom: 6%; transform: translateX(70%); background: white; border-radius: 5px; border: 3px solid rgb(251, 100, 2); }
 .output > div { width: 100%; }
 .groups { display: block; font-size: 18px; line-height: 30px; text-align: left; margin: 0px; }
-.info-btn { position: absolute; right: -75px; top: 70px; width: 27px; height: 27px; border-radius: 50%; border: 3px solid white; display: flex; align-items: center; justify-content: center; }
+.info-btn {/* position: absolute; *//* right: -75px; *//* top: 70px; */width: 27px;height: 27px;border-radius: 50%;border: 3px solid white;display: flex;align-items: center;justify-content: center;}
 .info-btn img { width: 20px; }
-.logo { position: absolute; left: -17%; top: 23%; width: 122px; background: white; }
+.logo {/* position: absolute; *//* left: -17%; *//* top: 23%; */width: 122px;background: white;}
+.btns-logo{
+
+position: absolute;
+
+width: 220px;
+
+height: 79px;
+
+/* background: red; */
+
+right: -45%;
+
+top: 18px;
+
+right: -18%;
+
+top: 16px;
+
+transform: translateX(70%);
+
+display: flex;
+
+align-items: center;
+
+justify-content: space-between;
+}
 @media (max-width: 1200px) {
-  section { position: relative; transform: translateY(-5%); }
+  section {position: relative;transform: translateY(-5%);padding: 50px 278px 50px 120px;}
 }
 @media (max-height: 720px) {
   h2 { top: 50px; right: -20%; }
   .output {bottom: -20px;right: -20%;}
   .info-btn{
-    top: 15px;
+    /* top: 15px; */
   }
   .reset{
-    top: 15px;
+    /* top: 15px; */
+  }
+  .btns-logo{
+    right: -20%;
+    top: -35px;
   }
 }
