@@ -24,9 +24,10 @@
       <button class="reset" name="button" onclick="reset();">
         <img src="images/reset.png" alt="">
       </button>
-      <a href="www.youtube.com" class="info-btn">
-        <img src="images/question-mark.png" alt="">
+      <a  onclick="popup1()" class="info-btn ">
+        <img src="images/question-mark.png"  alt="">
       </a>
+      <span class="popuptext" id="myPopup"><a href="https://training.techops.fedex.com/resources/video/other/How_To_Use_The_PW4000_Rub_Strip_Calculator.mp4" target="blank">How To Use The PW4000 Rub Strip Calculator</a></span>
       <img class="logo" src="images/FedEx.svg" alt="">
     </div>
 
@@ -102,6 +103,13 @@
 
   <script type="text/javascript" src="js/main.js">
 
+  </script>
+  <script>
+
+    function popup1() {
+      var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
   </script>
 </body>
 

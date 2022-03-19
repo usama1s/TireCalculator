@@ -72,7 +72,7 @@ align-items: center;
 justify-content: space-between;
 }
 @media (max-width: 1200px) {
-  section {position: relative;transform: translateY(-5%);padding: 50px 278px 50px 120px;}
+  section {position: relative;transform: translateY(-5%);    padding: 75px 278px 0px 120px;}
 }
 @media (max-height: 720px) {
   h2 { top: 50px; right: -20%; }
@@ -87,4 +87,59 @@ justify-content: space-between;
     right: -20%;
     top: -35px;
   }
+}
+/* --- popup-- */
+.info-btn{
+cursor: pointer;
+}
+
+/* The actual popup */
+ .popuptext {
+  visibility: hidden;
+  min-width: 160px;
+  background-color: rgb(255, 255, 255);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 4px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 99%;
+  left: -37%;
+  text-decoration: none;
+border: 1px solid rgb(253, 101, 2);
+}
+.popuptext a{
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+/* Popup arrow */
+ .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 47%;
+  margin-left: -5px;
+  border-width: 12px;
+  border-style: solid;
+  border-color: rgb(253, 101, 2) transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+ .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
 }
