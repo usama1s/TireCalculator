@@ -111,8 +111,10 @@ border: 1px solid rgb(253, 101, 2);
 }
 .popuptext a{
   text-decoration: none;
-  color: black;
-  font-weight: 600;
+  color: blue;
+  /* font-weight: 600; */
+  /* text-align: center; */
+  /* font-size: 18px; */
 }
 /* Popup arrow */
  .popuptext::after {
@@ -135,7 +137,7 @@ border: 1px solid rgb(253, 101, 2);
 
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
-  from {opacity: 0;} 
+  from {opacity: 0;}
   to {opacity: 1;}
 }
 
