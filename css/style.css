@@ -1,9 +1,9 @@
 bor { margin: 0px; padding: 0px; box-sizing: border-box; }
 :focus { outline: none; }
-body { position: relative; font-family: sans-serif; background: linear-gradient(-45deg, rgb(77, 20, 140) 25%, rgb(255, 102, 0) 100%); width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: center; overflow: hidden !important; margin: 0px !important; }
+body {position: relative;font-family: sans-serif;background: linear-gradient(-45deg, rgb(77, 20, 140) 25%, rgb(255, 102, 0) 100%);width: 100vw;height: 100vh;display: flex;align-items: center;justify-content: center;overflow: hidden !important;margin: 0px !important;display: -webkit-flex; /* NEW */display: flex;-webkit-flex-wrap: wrap; /* NEW */}
 h2 {position: absolute;right: -18%;top: 50%;transform: translate(70%,calc(-0% - 170px));text-align: left;font-size: 19px;line-height: 28px;padding: 10px 15px;background: white;border-radius: 5px;border: 3px solid rgb(240, 95, 12);}
-section {width: fit-content;height: fit-content;padding: 50px 300px 50px 128px;margin: auto;}
-.tire { margin: auto; display: block; position: relative; width: fit-content; }
+section {width: fit-content;height: fit-content;padding: 50px 300px 50px 128px !important;margin: auto;}
+.tire {margin: auto;display: block;position: relative;width: fit-content;transform: translateY(-10px);}
 .landscapeScreen #engine-img {height: calc(100vh - 190px);}
 .portraitScreen #engine-img { width: calc(100vw - 280px); }
 .inputs { background-color: white; padding: 7px; max-width: 127px; position: absolute; z-index: 1; transform-origin: center center; border-radius: 5px; border: 3px solid black; }
@@ -23,21 +23,21 @@ section {width: fit-content;height: fit-content;padding: 50px 300px 50px 128px;m
 #p8 { right: 11%; top: 11%; transform: translate(50%, -50%); border-color: rgb(253, 101, 2); }
 .lines { width: 4px; background: red; position: absolute; z-index: 0; height: 100px; transform-origin: center center; }
 .lines::after { content: ""; display: block; width: 10px; height: 10px; background: red; position: absolute; bottom: 0px; left: 50%; transform: translateX(-50%); border-radius: 50%; }
-#line1 { left: 50%; top: 8%; transform: translate(-50%, -50%); }
+#line1 {left: 50%;top: 7.5%;transform: translate(-50%, -50%);}
 #line1::after { }
-#line2 { left: 21%; top: 21%; transform: translate(-50%, -50%) rotate(-45deg); }
+#line2 {left: 20%;top: 20%;transform: translate(-50%, -50%) rotate(-45deg);}
 #line2::after { }
-#line3 { left: 8%; top: 50%; transform: translate(-50%, -50%) rotate(-90deg); }
+#line3 {left: 7%;top: 50%;transform: translate(-50%, -50%) rotate(-90deg);}
 #line3::after { }
-#line4 { left: 20.2%; bottom: 20.2%; transform: translate(-50%, 50%) rotate(-135deg); }
+#line4 {left: 19.5%;bottom: 19.5%;transform: translate(-50%, 50%) rotate(-135deg);}
 #line4::after { }
-#line5 { left: 50%; bottom: 7.5%; transform: translate(-50%, 50%) rotate(180deg); }
+#line5 {left: 50%;bottom: 6.5%;transform: translate(-50%, 50%) rotate(180deg);}
 #line5::after { }
-#line6 { right: 19.5%; bottom: 19.5%; transform: translate(50%, 50%) rotate(135deg); }
+#line6 {right: 18.5%;bottom: 18.5%;transform: translate(50%, 50%) rotate(135deg);}
 #line6::after { }
-#line7 { right: 7%; top: 50%; transform: translate(50%, -50%) rotate(90deg); }
+#line7 {right: 6%;top: 50%;transform: translate(50%, -50%) rotate(90deg);}
 #line7::after { }
-#line8 { right: 20.2%; top: 20.2%; transform: translate(50%, -50%) rotate(45deg); }
+#line8 {right: 19.2%;top: 19.2%;transform: translate(50%, -50%) rotate(45deg);}
 #line8::after { }
 .output {display: block;align-items: center;justify-content: center;flex-grow: 1;width: 185px;padding: 10px 15px;position: absolute;right: -18%;top: 50%;transform: translate(70%,calc(-0% + 45px));background: white;border-radius: 5px;border: 3px solid rgb(251, 100, 2);}
 .output > div { width: 100%; }
