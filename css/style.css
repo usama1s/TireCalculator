@@ -70,9 +70,12 @@ display: flex;
 align-items: center;
 
 justify-content: space-between;
+z-index: 3;
 }
 @media (max-width: 1200px) {
-  section {position: relative;transform: translateY(-5%);    padding: 75px 278px 0px 120px;}
+  section {position: relative;
+    transform: translateY(-5%);
+    padding: 75px 278px 0px 120px;}
 }
 @media (max-height: 720px) {
   h2 {/* top: 50px; *//* right: -20%; */}
